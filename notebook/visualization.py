@@ -7,6 +7,7 @@ import seaborn as sns
 
 # remover warnings
 import warnings
+
 warnings.simplefilter("ignore")
 
 sns.set(style="white")
@@ -148,43 +149,58 @@ def viz_stacked(viz):
     returns:
         stacked: gráfico de barras empilhadas que vão de 0 à 100%, comparando alguns destaques dos times em seus últimos confrontos
     """
-    viz = (
-        viz[
-            [
-                "teams.league.fixtures.loses.away",
-                "teams.league.fixtures.wins.away",
-                "teams.league.fixtures.loses.home",
-                "teams.league.fixtures.wins.home",
-                "teams.name",
-                "statistics.games.rating.pergame",
-                "Total Shots.pergols",
-                "Total Shots.pergame",
-                "Ball Possession.pergame",
-                "D",
-                "L",
-                "W",
-                "gols",
+    try:
+        viz = (
+            viz[
+                [
+                    "teams.league.fixtures.loses.away",
+                    "teams.league.fixtures.wins.away",
+                    "teams.league.fixtures.loses.home",
+                    "teams.league.fixtures.wins.home",
+                    "teams.name",
+                    "statistics.games.rating.pergame",
+                    "Total Shots.pergols",
+                    "Total Shots.pergame",
+                    "Ball Possession.pergame",
+                    "D",
+                    "L",
+                    "W",
+                    "gols",
+                ]
             ]
-        ]
-        .set_index("teams.name")
-        .rename(
-            columns={
-                "teams.league.fixtures.wins.home": "Vitórias em Casa no Campeonato",
-                "teams.league.fixtures.loses.home": "Derrotas em Casa no Campeonato",
-                "teams.league.fixtures.wins.away": "Vitórias Fora de Casa no Campeonato",
-                "teams.league.fixtures.loses.away": "Derrotas Fora de Casa no Campeonato",
-                "gols": "Gols feitos",
-                "W": "Vitórias",
-                "D": "Empates",
-                "L": "Derrotas",
-                "statistics.games.rating.pergame": "Rating por Jogo",
-                "Ball Possession.pergame": "Posse de Bola por Jogo",
-                "Total Shots.pergame": "Chutes ao Gol por Jogo",
-                "Total Shots.pergols": "Chutes ao Gol por Gol",
-            }
+            .set_index("teams.name")
+            .rename(
+                columns={
+                    "teams.league.fixtures.wins.home": "Vitórias em Casa no Campeonato",
+                    "teams.league.fixtures.loses.home": "Derrotas em Casa no Campeonato",
+                    "teams.league.fixtures.wins.away": "Vitórias Fora de Casa no Campeonato",
+                    "teams.league.fixtures.loses.away": "Derrotas Fora de Casa no Campeonato",
+                    "gols": "Gols feitos",
+                    "W": "Vitórias",
+                    "D": "Empates",
+                    "L": "Derrotas",
+                    "statistics.games.rating.pergame": "Rating por Jogo",
+                    "Ball Possession.pergame": "Posse de Bola por Jogo",
+                    "Total Shots.pergame": "Chutes ao Gol por Jogo",
+                    "Total Shots.pergols": "Chutes ao Gol por Gol",
+                }
+            )
+            .T
         )
-        .T
-    )
+
+    except Exception:
+        viz = viz.set_index("player.name")[
+            [
+                "statistics.games.rating",
+                "statistics.games.minutes.pergame",
+                "statistics.shots.total",
+                "statistics.goals.total",
+                "statistics.goals.assists",
+                "statistics.passes.key",
+                "statistics.cards.yellow",
+                "statistics.cards.red",
+            ]
+        ].T
 
     # Add a small value to all the values in the dataframe to avoid zero values
     viz = viz + 0.00001
@@ -220,7 +236,7 @@ def viz_stacked(viz):
     ax.legend(title="Results", loc="center left", bbox_to_anchor=(1, 0.5))
 
     # Set the title of the plot
-    ax.set_title("Results by Team")
+    ax.set_title("Results")
 
     # Show the graph
     stacked = plt.show
