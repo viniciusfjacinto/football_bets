@@ -19,7 +19,6 @@ from unidecode import unidecode
 import warnings
 
 warnings.simplefilter("ignore")
-import http.client
 
 # request API
 payload = {}

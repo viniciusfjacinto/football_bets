@@ -1,14 +1,13 @@
-#manipulação dos dados
+# manipulação dos dados
 import pandas as pd
 
-#visualização
+# visualização
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-#remover warnings
+# remover warnings
 import warnings
 warnings.simplefilter("ignore")
-import http.client
 
 sns.set(style="white")
 sns.set_palette("Set2")
