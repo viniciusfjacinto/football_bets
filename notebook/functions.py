@@ -15,6 +15,13 @@ import datetime
 # manipular strings
 from unidecode import unidecode
 
+# remover warnings
+import warnings
+
+warnings.simplefilter("ignore")
+import http.client
+
+# request API
 payload = {}
 
 headers = {
