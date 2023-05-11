@@ -17,8 +17,12 @@ Analysis of future matches between two teams. It allows selecting the country, l
 # 2. bets_jxj.ipynb
 Allows comparing the performance of 2 individual players throughout the championship. It is a very interesting application when we want to observe the past performance of 2 stars before a match between them occurs (ex: Mbappe x Lewandowski).
 
+![image](https://github.com/viniciusfjacinto/football_bets/assets/87664450/44e3674b-351b-430e-9cb0-2006b634d004)
+
 # 3. bets_odds_gatherer.ipynb
 Allows downloading all available odds for upcoming matches, in order to analyze the market and visualize the best entries according to the prices offered by different bookmakers.
+
+![image](https://github.com/viniciusfjacinto/football_bets/assets/87664450/5299acc6-1034-4df7-8ada-a22c98f4cf82)
 
 # 4. bets_historical_statistics.ipynb
 
