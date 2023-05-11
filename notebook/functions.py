@@ -24,7 +24,7 @@ warnings.simplefilter("ignore")
 payload = {}
 
 headers = {
-    "x-rapidapi-key": "SUA_CHAVE_AQUI",
+    "x-rapidapi-key": 'YOUR_API_KEY',
     "x-rapidapi-host": "v3.football.api-sports.io",
 }
 

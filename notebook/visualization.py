@@ -189,18 +189,33 @@ def viz_stacked(viz):
         )
 
     except Exception:
-        viz = viz.set_index("player.name")[
-            [
-                "statistics.games.rating",
-                "statistics.games.minutes.pergame",
-                "statistics.shots.total",
-                "statistics.goals.total",
-                "statistics.goals.assists",
-                "statistics.passes.key",
-                "statistics.cards.yellow",
-                "statistics.cards.red",
+        viz = (
+            viz.set_index("player.name")[
+                [
+                    "statistics.cards.yellow",
+                    "statistics.cards.red",
+                    "statistics.games.rating",
+                    "statistics.games.minutes.pergame",
+                    "statistics.shots.total",
+                    "statistics.goals.total",
+                    "statistics.goals.assists",
+                    "statistics.passes.key",
+                ]
             ]
-        ].T
+            .rename(
+                columns={
+                    "statistics.cards.yellow": "Cartões Amarelos",
+                    "statistics.cards.red": "Cartões Vermelhos",
+                    "statistics.games.rating": "Rating (média)",
+                    "statistics.games.minutes.pergame": "Minutos Jogados (média)",
+                    "statistics.shots.total": "Chutes ao Gol (total)",
+                    "statistics.goals.total": "Gols (total)",
+                    "statistics.goals.assists": "Assistências (total)",
+                    "statistics.passes.key": "Passes Chave (total)",
+                }
+            )
+            .T
+        )
 
     # Add a small value to all the values in the dataframe to avoid zero values
     viz = viz + 0.00001
