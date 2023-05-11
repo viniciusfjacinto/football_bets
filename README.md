@@ -22,6 +22,8 @@ Allows comparing the performance of 2 individual players throughout the champion
 # 3. bets_odds_gatherer.ipynb
 Allows downloading all available odds for upcoming matches, in order to analyze the market and visualize the best entries according to the prices offered by different bookmakers.
 
+![image](https://github.com/viniciusfjacinto/football_bets/assets/87664450/ea1582ae-134d-42cb-b544-8784fe46754b)
+
 # 4. bets_historical_statistics.ipynb
 
 Allows requesting and downloading all statistics of a league, from today's date to when information is available (usually 2010, with more detailed information available from 2015/2016 onwards). With this, it is possible to elaborate studies, graphs and observe the behavior of teams throughout history. A real gold mine for football enthusiasts.
