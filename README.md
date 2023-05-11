@@ -22,7 +22,7 @@ Allows comparing the performance of 2 individual players throughout the champion
 # 3. bets_odds_gatherer.ipynb
 Allows downloading all available odds for upcoming matches, in order to analyze the market and visualize the best entries according to the prices offered by different bookmakers.
 
-![image](https://github.com/viniciusfjacinto/football_bets/assets/87664450/5299acc6-1034-4df7-8ada-a22c98f4cf82)
+![image](https://github.com/viniciusfjacinto/football_bets/assets/87664450/4a61288d-65bb-42d5-b9e6-d1fb3e483932)
 
 # 4. bets_historical_statistics.ipynb
 
