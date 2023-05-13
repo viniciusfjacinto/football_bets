@@ -9,7 +9,7 @@ This repository contains a sports analysis project for soccer. The project consu
 
 ![image](https://user-images.githubusercontent.com/87664450/235800116-f1374610-39ad-4dc2-898f-4265021771a3.png)
 
-## modules functions.py and visualizations.py
+# modules functions.py and visualizations.py
 Contain all the necessary formulas, keys and libraries for running the notebooks below
 
 # 1. bets_headxhead.ipynb
