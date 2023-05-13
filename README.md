@@ -9,6 +9,9 @@ This repository contains a sports analysis project for soccer. The project consu
 
 ![image](https://user-images.githubusercontent.com/87664450/235800116-f1374610-39ad-4dc2-898f-4265021771a3.png)
 
+# modules functions.py and visualizations.py
+Contain all the necessary formulas, keys and libraries for running the notebooks below
+
 # 1. bets_headxhead.ipynb
 Analysis of future matches between two teams. It allows selecting the country, league, and match to be analyzed, comparing the performance of the teams that will face each other in the championship and also in their last matches against each other.
 
