@@ -257,3 +257,35 @@ def viz_stacked(viz):
     stacked = plt.show
 
     return stacked
+
+
+def viz_pred(pred):
+    # verifica a quantidade de acertos por categoria (1, 2, 1X, 2X)
+    vpred = (
+        (
+            pred.groupby(["prediction", "winner_correct_prediction"]).size()
+            / pred.shape[0]
+            * 100
+        )
+        .to_frame()
+        .rename(columns={0: "value"})
+        .round(2)
+    )  # .plot.barh()
+
+    # group and sum the values
+    grouped = vpred.groupby(["prediction", "winner_correct_prediction"])["value"].sum()
+
+    # reshape the DataFrame
+    stacked = grouped.unstack()
+    stacked.plot.bar(stacked=True)
+
+    # set the axis labels and title
+    plt.xlabel("Previsão")
+    plt.ylabel("Valor")
+    plt.title("Previsões de Jogos Passados")
+
+    # show
+
+    pred_viz = plt.show
+
+    return pred_viz
