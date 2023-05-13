@@ -27,8 +27,11 @@ Allows downloading all available odds for upcoming matches, in order to analyze 
 # 4. bets_historical_statistics.ipynb
 
 Allows requesting and downloading all statistics of a league, from today's date to when information is available (usually 2010, with more detailed information available from 2015/2016 onwards). With this, it is possible to elaborate studies, graphs and observe the behavior of teams throughout history. A real gold mine for football enthusiasts.
+Aditionally we can evaluate how the predictions provided by the API have performed, whether they have been correct or incorrect in the majority of games, and identify the most accurate bets.
 
 ![image](https://user-images.githubusercontent.com/87664450/235799789-cfb39f25-e59d-4c3e-a763-c6a8e6a0fc89.png)
+![image](https://github.com/viniciusfjacinto/football_bets/assets/87664450/79f58dfe-2d96-4a90-a2ef-b4e0f0f973fa)
+
 
 # 5. bets_ml_models.ipynb
 
