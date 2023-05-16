@@ -2,35 +2,33 @@
 
 # About the Project
 
-Dense data-driven notebooks focuseds on football analysis aimed at applications in sports betting.
-This repository contains a sports analysis project for soccer. The project consumes data from an API and manipulates it in order to generate results that can be used for comparison between teams, players, and prediction of outcomes. Its outputs were divided into several scripts, including the following notebooks.
+Análise de futebol com o objetivo de aplicação em apostas esportivas. Este repositório contém um projeto de análise esportiva para futebol. O projeto consome dados de uma API de acordo com as escolhas desejadas (país e campeonato) e os manipula para gerar resultados que podem ser usados para comparação entre times, jogadores e previsão de resultados. Suas saídas foram divididas em vários scripts, incluindo os seguintes notebooks.
 
-*The API can be acessed through https://dashboard.api-football.com/
+*A API pode ser acessada em  https://dashboard.api-football.com/
 
 ![image](https://user-images.githubusercontent.com/87664450/235800116-f1374610-39ad-4dc2-898f-4265021771a3.png)
 
-# modules functions.py and visualizations.py
-Contain all the necessary formulas, keys and libraries for running the notebooks below
+# Módulos functions.py e visualizations.py
+Contêm todas as fórmulas, chaves e bibliotecas necessárias para executar os notebooks abaixo.
 
 # 1. bets_headxhead.ipynb
-Analysis of future matches between two teams. It allows selecting the country, league, and match to be analyzed, comparing the performance of the teams that will face each other in the championship and also in their last matches against each other.
+Análise de futuros jogos entre dois times. Permite selecionar o país, liga e jogo a ser analisado, comparando o desempenho das equipes que se enfrentarão no campeonato e também em seus últimos jogos entre si.
 
 ![image](https://user-images.githubusercontent.com/87664450/235794080-56355ccc-21ac-452d-bd2d-76ca595fd0da.png)
 
 # 2. bets_jxj.ipynb
-Allows comparing the performance of 2 individual players throughout the championship. It is a very interesting application when we want to observe the past performance of 2 stars before a match between them occurs (ex: Mbappe x Lewandowski).
+Permite comparar o desempenho de 2 jogadores individuais ao longo do campeonato. É uma aplicação muito interessante quando queremos observar o desempenho anterior de 2 estrelas antes de um confronto entre eles ocorrer (ex: Mbappé x Lewandowski).
 
 ![image](https://github.com/viniciusfjacinto/football_bets/assets/87664450/44e3674b-351b-430e-9cb0-2006b634d004)
 
 # 3. bets_odds_gatherer.ipynb
-Allows downloading all available odds for upcoming matches, in order to analyze the market and visualize the best entries according to the prices offered by different bookmakers.
+Permite baixar todas as odds disponíveis para jogos futuros, a fim de analisar o mercado e visualizar as melhores opções de acordo com os preços oferecidos por diferentes casas de apostas.
 
 ![image](https://github.com/viniciusfjacinto/football_bets/assets/87664450/4a61288d-65bb-42d5-b9e6-d1fb3e483932)
 
 # 4. bets_historical_statistics.ipynb
 
-Allows requesting and downloading all statistics of a league, from today's date to when information is available (usually 2010, with more detailed information available from 2015/2016 onwards). With this, it is possible to elaborate studies, graphs and observe the behavior of teams throughout history. A real gold mine for football enthusiasts.
-Aditionally we can evaluate how the predictions provided by the API have performed, whether they have been correct or incorrect in the majority of games, and identify the most accurate bets.
+Permite solicitar e baixar todas as estatísticas de uma liga, desde a data atual até quando as informações estão disponíveis (geralmente 2010, com informações mais detalhadas disponíveis a partir de 2015/2016 em diante). Com isso, é possível elaborar estudos, gráficos e observar o comportamento das equipes ao longo da história. Uma verdadeira mina de ouro para os entusiastas do futebol. Além disso, podemos avaliar como as previsões fornecidas pela API têm se saído, se têm sido corretas ou incorretas na maioria dos jogos, e identificar as apostas mais precisas.
 
 ![image](https://user-images.githubusercontent.com/87664450/235799789-cfb39f25-e59d-4c3e-a763-c6a8e6a0fc89.png)
 ![image](https://github.com/viniciusfjacinto/football_bets/assets/87664450/79f58dfe-2d96-4a90-a2ef-b4e0f0f973fa)
@@ -38,6 +36,6 @@ Aditionally we can evaluate how the predictions provided by the API have perform
 
 # 5. bets_ml_models.ipynb
 
-We apply machine learning models on top of the historical data collected in item 4. We use the Scikit-Learn library for data preprocessing and normalization, and then run and evaluate different models. The machine learning models aim to analyze all previous results to predict what the outcome of future matches will be. It is a powerful tool for sports analysis.
+Aplicamos modelos de aprendizado de máquina com base nos dados históricos coletados no item 4. Usamos a biblioteca Scikit-Learn para pré-processamento e normalização de dados e, em seguida, executamos e avaliamos diferentes modelos. Os modelos de aprendizado de máquina visam analisar todos os resultados anteriores para prever qual será o resultado de jogos futuros. É uma ferramenta poderosa para análise esportiva.
 
 ![image](https://user-images.githubusercontent.com/87664450/235799729-95c9bd8b-dc2e-4f7a-9bde-851f999e2776.png)
