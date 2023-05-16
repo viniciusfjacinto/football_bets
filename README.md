@@ -1,6 +1,6 @@
-# Statistics Analysis for Betting using Football-API
+# Análise Estatística focada em Apostas utilizando a API-Football
 
-# About the Project
+# Sobre o projeto
 
 Análise de futebol com o objetivo de aplicação em apostas esportivas. Este repositório contém um projeto de análise esportiva para futebol. O projeto consome dados de uma API de acordo com as escolhas desejadas (país e campeonato) e os manipula para gerar resultados que podem ser usados para comparação entre times, jogadores e previsão de resultados. Suas saídas foram divididas em vários scripts, incluindo os seguintes notebooks.
 
