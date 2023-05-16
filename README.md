@@ -36,6 +36,6 @@ Permite solicitar e baixar todas as estatísticas de uma liga, desde a data atua
 
 # 5. bets_ml_models.ipynb
 
-Aplicamos modelos de aprendizado de máquina com base nos dados históricos coletados no item 4. Usamos a biblioteca Scikit-Learn para pré-processamento e normalização de dados e, em seguida, executamos e avaliamos diferentes modelos. Os modelos de aprendizado de máquina visam analisar todos os resultados anteriores para prever qual será o resultado de jogos futuros. É uma ferramenta poderosa para análise esportiva.
+Aplicamos modelos de aprendizado de máquina com base nos dados históricos coletados no item 4. Usamos a biblioteca Scikit-Learn para pré-processamento e padronização de dados e, em seguida, executamos e avaliamos diferentes modelos. Os modelos de aprendizado de máquina visam analisar todos os resultados anteriores para prever qual será o resultado de jogos futuros. É uma ferramenta poderosa para análise esportiva.
 
 ![image](https://user-images.githubusercontent.com/87664450/235799729-95c9bd8b-dc2e-4f7a-9bde-851f999e2776.png)
