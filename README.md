@@ -31,8 +31,7 @@ Permite baixar todas as odds disponíveis para jogos futuros, a fim de analisar 
 Permite solicitar e baixar todas as estatísticas de uma liga, desde a data atual até quando as informações estão disponíveis (geralmente 2010, com informações mais detalhadas disponíveis a partir de 2015/2016 em diante). Com isso, é possível elaborar estudos, gráficos e observar o comportamento das equipes ao longo da história. Uma verdadeira mina de ouro para os entusiastas do futebol. Além disso, podemos avaliar como as previsões fornecidas pela API têm se saído, se têm sido corretas ou incorretas na maioria dos jogos, e identificar as apostas mais precisas.
 
 ![image](https://user-images.githubusercontent.com/87664450/235799789-cfb39f25-e59d-4c3e-a763-c6a8e6a0fc89.png)
-![image](https://github.com/viniciusfjacinto/football_bets/assets/87664450/79f58dfe-2d96-4a90-a2ef-b4e0f0f973fa)
-
+![image](https://github.com/viniciusfjacinto/football_bets/assets/87664450/37f1f50b-478d-4b16-b908-57c6ade9439a)
 
 # 5. bets_ml_models.ipynb
 
