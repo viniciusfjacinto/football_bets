@@ -153,13 +153,22 @@ def viz_stacked(viz):
         viz = (
             viz[
                 [
-                    "teams.league.fixtures.loses.away",
-                    "teams.league.fixtures.wins.away",
-                    "teams.league.fixtures.loses.home",
-                    "teams.league.fixtures.wins.home",
+                    # "teams.league.fixtures.loses.away",
+                    # "teams.league.fixtures.wins.away",
+                    # "teams.league.fixtures.loses.home",
+                    # "teams.league.fixtures.wins.home",
+                    "teams.league.biggest.streak.wins",
+                    "teams.league.biggest.streak.loses",
+                    "teams.league.fixtures.draws.total",
+                    "teams.league.fixtures.loses.total",
+                    "teams.league.fixtures.wins.total",
                     "teams.name",
                     "statistics.games.rating.pergame",
-                    "Total Shots.pergols",
+                    "Offsides.pergame",
+                    "Fouls.pergame",
+                    "Corner Kicks.pergame",
+                    "Passes %.pergame",
+                    #"Total Shots.pergols",
                     "Total Shots.pergame",
                     "Ball Possession.pergame",
                     "D",
@@ -175,14 +184,22 @@ def viz_stacked(viz):
                     "teams.league.fixtures.loses.home": "Derrotas em Casa no Campeonato",
                     "teams.league.fixtures.wins.away": "Vitórias Fora de Casa no Campeonato",
                     "teams.league.fixtures.loses.away": "Derrotas Fora de Casa no Campeonato",
-                    "gols": "Gols feitos",
-                    "W": "Vitórias",
-                    "D": "Empates",
-                    "L": "Derrotas",
-                    "statistics.games.rating.pergame": "Rating por Jogo",
-                    "Ball Possession.pergame": "Posse de Bola por Jogo",
-                    "Total Shots.pergame": "Chutes ao Gol por Jogo",
-                    "Total Shots.pergols": "Chutes ao Gol por Gol",
+                    "gols": "Gols feitos (Últimos 5 confrontos)",
+                    "W": "Vitórias (Últimos 5 confrontos)",
+                    "D": "Empates (Últimos 5 confrontos)",
+                    "L": "Derrotas (Últimos 5 confrontos)",
+                    "statistics.games.rating.pergame": "Rating por Jogo (Últimos 5 confrontos)",
+                    "Ball Possession.pergame": "Posse de Bola por Jogo (Últimos 5 confrontos)",
+                    "Total Shots.pergame": "Chutes ao Gol por Jogo (Últimos 5 confrontos)",
+                    "Total Shots.pergols": "Chutes ao Gol por Gol (Últimos 5 confrontos)",
+                    "Corner Kicks.pergame": "Escanteios por Jogo (Últimos 5 confrontos)",
+                    "Fouls.pergame": "Faltas por Jogo (Últimos 5 confrontos)",
+                    "Passes %.pergame":"% Passes Certos por Jogo (Últimos 5 confrontos)",
+                    "teams.league.fixtures.loses.total" : "Derrotas (no Campeonato)",                    "teams.league.fixtures.wins.total" : "Vitórias (no Campeonato)",
+                    "teams.league.fixtures.draws.total":"Empates (no Campeonato)",
+                    "Offsides.pergame":"Impedimentos por Jogo (Últimos 5 confrontos)",
+                    "teams.league.biggest.streak.wins": "Maior quantidade de Vitórias seguidas (no Campeonato)",
+                    "teams.league.biggest.streak.loses": "Maior quantidade de Derrotas seguidas (no Campeonato)",
                 }
             )
             .T
@@ -224,7 +241,7 @@ def viz_stacked(viz):
     viz_pct = viz / viz.sum(axis=1).values.reshape(-1, 1)
 
     # Create a stacked bar graph
-    fig, ax = plt.subplots()
+    fig, ax = plt.subplots(figsize=(5,9))
     viz_pct.plot(kind="barh", stacked=True, ax=ax)
 
     # Set the x-axis limits and ticks
@@ -248,16 +265,15 @@ def viz_stacked(viz):
 
     # Set the y-axis label and legend
     ax.set_ylabel("")
-    ax.legend(title="Results", loc="center left", bbox_to_anchor=(1, 0.5))
+    ax.legend(title="Times", loc="center left", bbox_to_anchor=(1, 0.5))
 
     # Set the title of the plot
-    ax.set_title("Results")
+    ax.set_title("Estatísticas dos Times")
 
     # Show the graph
     stacked = plt.show
 
     return stacked
-
 
 def viz_pred(pred):
     # verifica a quantidade de acertos por categoria (1, 2, 1X, 2X)
