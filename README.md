@@ -14,7 +14,7 @@ Contêm todas as fórmulas, chaves e bibliotecas necessárias para executar os n
 # 1. bets_headxhead.ipynb
 Análise de futuros jogos entre dois times. Permite selecionar o país, liga e jogo a ser analisado, comparando o desempenho das equipes que se enfrentarão no campeonato e também em seus últimos jogos entre si.
 
-![image](https://user-images.githubusercontent.com/87664450/235794080-56355ccc-21ac-452d-bd2d-76ca595fd0da.png)
+![image](https://github.com/viniciusfjacinto/football_bets/assets/87664450/806e7de9-3509-4758-aeb2-85b0fca348c2)
 
 # 2. bets_jxj.ipynb
 Permite comparar o desempenho de 2 jogadores individuais ao longo do campeonato. É uma aplicação muito interessante quando queremos observar o desempenho anterior de 2 estrelas antes de um confronto entre eles ocorrer (ex: Mbappé x Lewandowski).
