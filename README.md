@@ -2,7 +2,9 @@
 
 # Sobre o projeto
 
-Análise de futebol com o objetivo de aplicação em apostas esportivas. Este repositório contém um projeto de análise esportiva para futebol. O projeto consome dados de uma API de acordo com as escolhas desejadas (país e campeonato) e os manipula para gerar resultados que podem ser usados para comparação entre times, jogadores e previsão de resultados. Suas saídas foram divididas em vários scripts, incluindo os seguintes notebooks.
+Análise de futebol com o objetivo de aplicação em apostas esportivas. Este repositório contém um projeto de análise esportiva para futebol. O projeto consome dados de uma API de acordo com as escolhas desejadas (país e campeonato) e os manipula para gerar resultados que podem ser usados para comparação entre times, jogadores e previsão de resultados. Suas saídas foram divididas em vários scripts, incluindo os seguintes notebooks listados abaixo.
+
+#### Next steps: o código de back-end será transformado em um app streamlit de fácil navegação e obtenção dos outputs para o usuário final.
 
 *A API pode ser acessada em  https://dashboard.api-football.com/
 
