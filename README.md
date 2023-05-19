@@ -14,7 +14,7 @@ Análise de futebol com o objetivo de aplicação em apostas esportivas. Este re
 Contêm todas as fórmulas, chaves e bibliotecas necessárias para executar os notebooks abaixo.
 
 # 1. bets_headxhead.ipynb
-Análise de futuros jogos entre dois times. Permite selecionar o país, liga e jogo a ser analisado, comparando o desempenho das equipes que se enfrentarão no campeonato e também em seus últimos jogos entre si.
+Análise de futuros jogos entre dois times. Permite selecionar o país, liga e jogo a ser analisado, comparando o desempenho das equipes que se enfrentarão no campeonato e também em seus últimos jogos entre si. Com o output em mãos, é possível analisar diversas características dos times, tanto em seus últimos 5 confrontos como ao longo do campeonato, de forma a fazer a melhor previsão do que pode ocorrer na partida.
 
 ![image](https://github.com/viniciusfjacinto/football_bets/assets/87664450/806e7de9-3509-4758-aeb2-85b0fca348c2)
 
@@ -24,7 +24,7 @@ Permite comparar o desempenho de 2 jogadores individuais ao longo do campeonato.
 ![image](https://github.com/viniciusfjacinto/football_bets/assets/87664450/44e3674b-351b-430e-9cb0-2006b634d004)
 
 # 3. bets_odds_gatherer.ipynb
-Permite baixar todas as odds disponíveis para jogos futuros, a fim de analisar o mercado e visualizar as melhores opções de acordo com os preços oferecidos por diferentes casas de apostas.
+Permite baixar todas as odds disponíveis para jogos recentes que ocorreram nos últimos 7-14 dias, a fim de analisar o mercado e visualizar as melhores opções de acordo com os preços oferecidos por diferentes casas de apostas.
 
 ![image](https://github.com/viniciusfjacinto/football_bets/assets/87664450/4a61288d-65bb-42d5-b9e6-d1fb3e483932)
 
