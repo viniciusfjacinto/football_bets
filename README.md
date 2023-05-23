@@ -4,11 +4,13 @@
 
 Análise de futebol com o objetivo de aplicação em apostas esportivas. Este repositório contém um projeto de análise esportiva para futebol. O projeto consome dados de uma API de acordo com as escolhas desejadas (país e campeonato) e os manipula para gerar resultados que podem ser usados para comparação entre times, jogadores e previsão de resultados. Suas saídas foram divididas em vários scripts, incluindo os seguintes notebooks listados abaixo.
 
-##### Next steps: o código de back-end será transformado em um app streamlit de fácil navegação e obtenção dos outputs para o usuário final.
+##### Next steps: o código de back-end está sendo transformado em um app streamlit de fácil navegação e obtenção dos outputs para o usuário final.
+https://viniciusfjacinto-football-bets-streamlitapp-streamlit-c8h6hw.streamlit.app/
 
 *A API pode ser acessada em  https://dashboard.api-football.com/
 
-![image](https://user-images.githubusercontent.com/87664450/235800116-f1374610-39ad-4dc2-898f-4265021771a3.png)
+![image](https://github.com/viniciusfjacinto/football_bets/assets/87664450/a60f2aea-a3cc-45a9-906d-8edfde46032d)
+
 
 # Módulos functions.py e visualizations.py
 Contêm todas as fórmulas, chaves e bibliotecas necessárias para executar os notebooks abaixo.
