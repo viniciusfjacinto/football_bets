@@ -28,7 +28,6 @@ headers = {
     "x-rapidapi-host": "v3.football.api-sports.io",
 }
 
-
 def req_padrao(req, iterador):
     """
     tanto as funções req_padrao, req_alt e req_odds agilizam o processo de fazer as requisições à API, já entregando os dados de forma estruturada para manipulação
@@ -50,7 +49,6 @@ def req_padrao(req, iterador):
 
     return pd.concat(ls_v)
 
-
 def req_alt(req, iterador):
     ls_v = []
 
@@ -63,7 +61,6 @@ def req_alt(req, iterador):
 
     return pd.concat(ls_v)
 
-
 def req_hxh(req, iterador1, iterador2):
     ls_v = []
 
@@ -75,7 +72,6 @@ def req_hxh(req, iterador1, iterador2):
     ls_v.append(fix_d)
 
     return pd.concat(ls_v)
-
 
 def flatten_nested_json_df(df):
     """
@@ -111,7 +107,6 @@ def flatten_nested_json_df(df):
         s = (df[new_columns].applymap(type) == dict).all()
         dict_columns = s[s].index.tolist()
     return df
-
 
 def transform_fixture(df):
     """
