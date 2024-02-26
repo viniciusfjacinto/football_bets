@@ -22,7 +22,7 @@ st.title("Previsão Esportiva - Futebol")
 payload = {}
 
 headers = {
-    "x-rapidapi-key": "c58a251d827eeee96ac5cb890e882cc9",
+    "x-rapidapi-key": "#####################",
     "x-rapidapi-host": "v3.football.api-sports.io",
 }
 
